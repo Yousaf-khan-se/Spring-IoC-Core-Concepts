@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id = "MP3" class = "lab10.I228797_F_Q2.MP3">
+	
+	<property name = "kalam" ref = "Hamd"></property>
+	
+	</bean>
+	
+	<bean id = "Naat" class = "lab10.I228797_F_Q2.Naat">
+	
+	<constructor-arg value = "Naat"/>
+	<constructor-arg value = "Junaid Jamshed"/>
+	<constructor-arg value = "Ilahi Teri Chokhat per"/>
+	
+	</bean>
+	
+	<bean id = "Hamd" class = "lab10.I228797_F_Q2.Hamd">
+	
+	<constructor-arg value = "Hamd"/>
+	<constructor-arg value = "Junaid Jamshed"/>
+	<constructor-arg value = "Mera Allah tu Kareem hai"/>
+	
+	</bean>
+		
+		<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+<!--		<bean id = "Coffee" class = "lab10.i228797_F.Coffee"></bean>   -->
+
+		<bean id = "Espresso" class = "lab10.i228797_F.Espresso">
+			<property name = "type" value = "Espresso"></property>
+			<property name = "size" value = "Small"></property>
+			<property name = "price" value = "1.99"></property>
+		</bean>
+		
+		<bean id = "Latte" class = "lab10.i228797_F.Latte">
+			<property name = "type" value = "Latte"></property>
+			<property name = "size" value = "Medium"></property>
+			<property name = "price" value = "2.99"></property>
+		</bean>
+		
+</beans>
